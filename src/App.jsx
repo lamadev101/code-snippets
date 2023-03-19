@@ -13,7 +13,7 @@ const App = () => {
 
     return (
       <main className='grid grid-cols-6'>
-        <aside className='sticky top-0 col-span-1 bg-gray-800 shadow-2xl h-screen'>
+        <aside className='sticky top-0 col-span-1 bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg shadow-2xl h-screen'>
           <Sidebar />
         </aside>
         <section className='col-span-5 relative bg-gradient-to-tr bg-[#010c19df]'>

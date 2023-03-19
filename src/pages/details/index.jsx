@@ -33,7 +33,7 @@ const Details = () => {
           </div>
           <hr />
         </div>
-        <div>{code}</div>
+        <div className='text-gray-100 text-xl'>{code}</div>
         <div className=' overflow-hidden rounded-lg shadow-2xl bg-gray-600 mt-8'>
           <div className='flex items-center justify-between px-2 text-xl text-white'>
             <div className='flex items-center gap-2'>
@@ -42,7 +42,7 @@ const Details = () => {
             </div>
             <button onClick={handleClick}>{!copy ? <RiFileCopyLine /> : <GiCheckMark />}</button>
           </div>
-          <SyntaxHighlighter language="python" style={atomOneDark} customStyle={{ padding: "20px" }} wrapLongLines={true}>
+          <SyntaxHighlighter language={state.lang} style={atomOneDark} customStyle={{ padding: "20px" }} wrapLongLines={true}>
             {state.code}
           </SyntaxHighlighter>
         </div>
